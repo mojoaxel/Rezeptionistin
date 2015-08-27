@@ -20,4 +20,4 @@ class Temperature(Plugin):
       temp_outdoor = parsed_json['current_observation']['temp_c']
       f.close()
       
-      bot.send_message(channel, "Die aktuelle Temperatur in der K4CG ist {temp}°C innen ".format(temp=temp) + "und {temp}°C aussen.".format(temp=temp_outdoor))
+      bot.send_message(channel, "Die aktuelle Temperatur in der K4CG ist {temp}°C innen ".format(temp=temp) + "und {temp}°C außen.".format(temp=temp_outdoor))
